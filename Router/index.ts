@@ -4,12 +4,12 @@ import path from 'path'
 const router = Router();
 
 router.get('/bird', (req: Request, res: Response) => {
-	const bird = path.join(__dirname, './bird.jpeg')
+	const bird = path.join(__dirname, 'bird.jpeg')
 	res.sendFile(bird)
 })
 
 router.get('/bunny', (req: Request, res: Response) => {
-	const bunny = path.join(__dirname, './bunny.jpeg')
+	const bunny = path.join(__dirname, 'bunny.jpeg')
 	res.sendFile(bunny)
 })
 
