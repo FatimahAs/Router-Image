@@ -1,11 +1,9 @@
-import express, { Application } from 'express';
-import userRoutes from './Router/index';
+import express from 'express';
+import Routes from './Router/index';
 
-const app: Application = express();
+const app = express();
 
-app.use(express.json());
-
-app.use('/', userRoutes);
+app.use(Routes);
 
 app.listen(3000, () => {
   console.log('Server running on port 3000');

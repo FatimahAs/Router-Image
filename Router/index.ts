@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express';
 import path from 'path'
 
-const router: Router = Router();
+const router = Router();
 
 router.get('/bird', (req: Request, res: Response) => {
 	const bird = path.join(__dirname, './bird.jpeg')
